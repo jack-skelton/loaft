@@ -1,3 +1,5 @@
-function myFirstFunction() {
-    return 'first';
-}
+$(document).ready(function(){
+      $('.parallax').parallax();
+    });
+
+    
