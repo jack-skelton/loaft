@@ -5,9 +5,11 @@ var uglify = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
 var del = require('del');
 var runSequence = require('run-sequence');
+var plumber = require('gulp-plumber');
 
 gulp.task('sass', function () {
     return gulp.src('app/css/*.scss')
+    .pipe(plumber())
     .pipe(sass())
     .pipe(gulp.dest('dist/css'))
     .pipe(browserSync.reload({
@@ -17,6 +19,7 @@ gulp.task('sass', function () {
 
 gulp.task('pug', function () {
     return gulp.src('app/*.pug')
+    .pipe(plumber())
     .pipe(pug())
     .pipe(gulp.dest('dist'))
     .pipe(browserSync.reload({
@@ -26,6 +29,7 @@ gulp.task('pug', function () {
 
 gulp.task('js', function () {
     return gulp.src('app/js/*.js')
+    .pipe(plumber())
     .pipe(gulp.dest('dist/js'))
     .pipe(browserSync.reload({
         stream: true
@@ -34,6 +38,7 @@ gulp.task('js', function () {
 
 gulp.task('images', function(){
     return gulp.src('app/images/*')
+    .pipe(plumber())
     .pipe(gulp.dest('dist/images'))
 });
 
