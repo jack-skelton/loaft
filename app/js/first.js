@@ -4,7 +4,7 @@ $(document).ready(function(){
 
  $(function(){
       $(".element").typed({
-        strings: ["Web developers", "Graphic designers.","Solution architects."],
+        strings: ["web developers.", "graphic designers.","solution architects."],
         typeSpeed: 100,
         loop: true,
         showCursor: true,
