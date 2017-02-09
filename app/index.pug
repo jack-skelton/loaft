@@ -5,7 +5,8 @@ html
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    script(src='/js/first.js')
+
+
 
 
 
@@ -13,18 +14,32 @@ html
 
 
 body
+    
+    
+
     .parallax-container.top
         .section.red.parallax
-           
+            .container
+                h1.header loaft
+                
+
                    
                     
 
     .section.white
+        .row.fixed
+            .col.hide-on-small-only.m3.l2
+                ul.section.table-of-contents
+                    li
+                        a(href='#about') About 
+                    li
+                        a(href='#projects') Projects
+                    li
+                        a(href='#contact') Contact
         .container
-            h1 loaft
             h2 a sydney web design agency
             .section.whiteSpace
-            .row
+            .row(id="about").scrollspy
                 .col.s12
                     h1 what are we?
                     h3 Specialists in web and graphics.
@@ -47,26 +62,27 @@ body
                     h3 If youve got a growing business, we'd like to hear from you    
            
             .section.whiteSpace
-            h1 our work
+            h1(id="projects").scrollspy our work
             .row
                 .col.s12.m4
-                    img.materialboxed(width='200', src='https://blog.sqlauthority.com/i/b/ilovesamples.jpg')
+                    img.materialboxed(width='300', src='images/1.jpg')
                 .col.s12.m4
-                    img.materialboxed(width='200', src='https://blog.sqlauthority.com/i/b/ilovesamples.jpg')    
+                    img.materialboxed(width='300', src='images/2.jpg')    
                 .col.s12.m4
-                    img.materialboxed(width='200', src='https://blog.sqlauthority.com/i/b/ilovesamples.jpg')
+                    img.materialboxed(width='300', src='images/4.jpg')
             
             .section.whiteSpace
 
     .parallax-container
         .parallax
-            .section.contact
+            .section.contact(id="contact").scrollspy
                 .container.white
                     h2 contact us
                     h3 email:
                     h3 your message:
                     h5.right-align loaft@email.com
 
+                    
                 
                        
                 
