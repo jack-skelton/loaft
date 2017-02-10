@@ -3,6 +3,7 @@ $primary-color: #ffd740;
 $accent-text: #000;
 $primary-text: #212121;
 $secondary-text: #424242;
+$highlighted-text: #64ffda;
 //------------------------------------------
 
 #side-menu {
@@ -25,8 +26,10 @@ $secondary-text: #424242;
         margin: 10px;
         height: 100%;
         line-height:52px;
+        font-size: 2vh;
         &:hover {
           color:$accent-text;
+           border-bottom: thick solid #64ffda ;
         }
       }
     }
@@ -81,3 +84,19 @@ $secondary-text: #424242;
     50% { opacity:0; }
     100% { opacity:1; }
 }
+
+.carousel-cell {
+  background: #EEE;
+}
+
+.carousel-cell img {
+  display: block;
+  height: 300px;
+}
+
+@media screen and ( min-width: 768px ) {
+  .carousel-cell img {
+    height: 600px;
+  }
+}
+mark{background: $highlighted-text !important;}
