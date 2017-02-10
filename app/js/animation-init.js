@@ -10,7 +10,7 @@ $(document).ready(function(){
       $(".element").typed({
         //strings: ["web developers.", "graphic designers.","solution architects."],
         strings: ["modern <strong>Web</strong> and <strong>Graphic</strong> design.", "increase your <b>Digital</b> reach."],
-        typeSpeed: 50,
+        typeSpeed: 30,
         loop: true,
         showCursor: true,
         backDelay: 1500,
@@ -20,4 +20,9 @@ $(document).ready(function(){
   });
 
 });
+
+ $(document).ready(function(){
+    $('.scrollspy').scrollSpy();
+  });
+        
 
