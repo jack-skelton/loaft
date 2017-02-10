@@ -51,12 +51,16 @@ h2.header
 .table-of-contents a
 {
   color: black !important;
+   font-family: Helvetica;
+   letter-spacing: -.03571em;
+   font-size: 25px;
 }
 .element{
   font-size: 70px;
    display: inline;
    font-family: Helvetica;
    letter-spacing: -.03571em;
+   background-color: mediumspringgreen;
 }
 .typed-cursor{
   font-size: 100px;
