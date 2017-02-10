@@ -5,42 +5,36 @@ html
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-    <script src="/js/first.js"></script>
+    <script src="/js/animation-init.js"></script>
     <script src="/js/second.js"></script>
    
-
-
-
-
-
-
-
-
 body
-    
-    
+    #side-menu.row.fixed
+        .col.hide-on-small-only.m3.l2
+            ul
+                li
+                    a(href='#about') Contact
+                li
+                    a(href='#about') Projects
+                li
+                    a(href='#about') Services
+                li
+                    a(href='#projects') About
+                li
+                    a(href='#contact') Loaft
 
-    .parallax-container.top
-        .section.amber.accent-2.parallax
+    #header.parallax-container
+        .parallax
             .container
-                h1.header Loaft
-                h2.header We are a team of 
-                    <div class="element"></div>
+                h1 Loaft
+                h2 <span class="element"></span>
                 
 
                    
                     
 
     .section.white
-        .row.fixed
-            .col.hide-on-small-only.m3.l2
-                ul.section.table-of-contents
-                    li
-                        a(href='#about') About 
-                    li
-                        a(href='#projects') Projects
-                    li
-                        a(href='#contact') Contact
+
         .container
             
             h2 a sydney web design agency

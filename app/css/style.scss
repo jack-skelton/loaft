@@ -1,35 +1,70 @@
+$primary-color: #ffd740;
 
-h1 {
-  color: red;
-}
-.section.amber.accent-2
-{
-  
- width: 100%;
-  height: 100vh; 
+$accent-text: #000;
+$primary-text: #212121;
+$secondary-text: #424242;
+//------------------------------------------
+
+#side-menu {
   position: fixed;
+  right: 0px;
+  z-index: 1;
+  -webkit-transform-origin: right top;
+  -webkit-transform:rotate(-90deg) translateY(-100%);
+
+  ul {
+    width: 100vh;
+    text-align: center;
+    height: 52px;
+
+    li {
+      display: inline; 
+
+      a {
+        color: $secondary-text;
+        margin: 10px;
+        height: 100%;
+        line-height:52px;
+        &:hover {
+          color:$accent-text;
+        }
+      }
+    }
+  }
 }
 
+#header  {
+  height: 100vh;
 
-.section.whiteSpace
-{
+  .parallax {
+    background-color: $primary-color;
+    width: 100%;
+    position: fixed;
+
+    h1 {
+      color: $accent-text;
+      font-size: 10vw;
+      font-weight: 900;
+      margin-top: 23vh;
+    }
+    h2 {
+      color: $primary-text;
+      font-size: 2.5vw;
+      .typed-cursor{
+        font-size: 2.5vw;
+        opacity: 1;
+        -webkit-animation: blink 0.7s infinite;
+        -moz-animation: blink 0.7s infinite;
+        animation: blink 0.7s infinite
+      }
+    }
+  }
+}
+
+.section.whiteSpace {
   height: 150px;
- 
-  
 }
- .parallax-container.top
-{ 
-      height: 870px;
-}
-h1.header
-{
-  color: black;
-  font-size: 300px;
-   font-family: Helvetica;
-   font-weight: bold;
-   letter-spacing: -.03571em;
    
-}       
 
 h2.header
 {
@@ -40,31 +75,9 @@ h2.header
    letter-spacing: -.03571em;
    
 }   
-.row.fixed
-{
-  top: 50%;
-  right: 30;
-  position: fixed;
-  
-}
 
-.table-of-contents a
-{
-  color: black !important;
-}
-.element{
-  font-size: 70px;
-   display: inline;
-   font-family: Helvetica;
-   letter-spacing: -.03571em;
-}
-.typed-cursor{
-  font-size: 100px;
-    opacity: 1;
-    -webkit-animation: blink 0.7s infinite;
-    -moz-animation: blink 0.7s infinite;
-    animation: blink 0.7s infinite;
-}
+
+
 @keyframes blink{
     0% { opacity:1; }
     50% { opacity:0; }
