@@ -4,15 +4,23 @@ $accent-text: #000;
 $primary-text: #212121;
 $secondary-text: #424242;
 $highlighted-text: #64ffda;
+
+$font-stack: 'Source Sans Pro', 'Sans-Serif';
 //------------------------------------------
 
 .secondary {
   color: $secondary-text;
 }
 
-p, h1, h2, h3, h4, h5, h6 {
+body, p, h1, h2, h3, h4, h5, h6 {
+  font-family: $font-stack  !important;
   color: $primary-text;
 }
+
+h2, h3, h4, h5, h6 {
+  font-weight: 300 !important;
+}
+
 
 #side-menu {
   position: fixed;
