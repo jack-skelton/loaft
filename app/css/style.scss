@@ -41,7 +41,7 @@ h2, h3, h4, h5, h6 {
         margin: 10px;
         height: 100%;
         line-height:52px;
-        font-size: 2vh;
+        font-size: 1.3em;
         &:hover {
           color:$accent-text;
           font-weight: bold;
@@ -141,7 +141,17 @@ box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
 
 @media screen and ( min-width: 768px ) {
   .carousel-cell img {
-    height: 600px;
+    height: 400px;
   }
 }
 mark{background: $highlighted-text !important;}
+
+#about{padding-top: 200px; padding-bottom: 200px;}
+#projects{padding-top: 200px; padding-bottom: 200px;}
+#services{padding-top: 200px; padding-bottom: 200px;}
+
+h4.aboutus
+{
+      line-height: 2em;
+          max-width: 700px;
+}
