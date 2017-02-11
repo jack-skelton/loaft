@@ -24,7 +24,9 @@ $(document).ready(function(){
 });
 
 $(document).ready(function(){
-  $('.scrollspy').scrollSpy();
+  $('.scrollspy').scrollSpy(
+    {scrollOffset: 0}
+  );
 });
 
 $(document).ready(function(){
