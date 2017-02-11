@@ -15,7 +15,7 @@ $(document).ready(function(){
         typeSpeed: 30,
         loop: true,
         showCursor: true,
-        backDelay: 1500,
+        backDelay: 3000,
         startDelay: 0
       });
     });
