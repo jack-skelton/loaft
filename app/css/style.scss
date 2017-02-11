@@ -68,15 +68,11 @@ $highlighted-text: #64ffda;
 
 
 
-/**                        <!--object#power-symbol(data="/images/power-symbol.svg" type="image/svg+xml")-->
-#power-symbol {
-    width: 100%;
-    z-index: 900;
-    margin-top: 35vh;
-}*/
 
 #power-symbol {
-  .power {
+
+  #power {
+    visibility: hidden;
     margin: 35vh 0 0 0;  
     opacity: 0.75;
     position: absolute;
@@ -89,7 +85,7 @@ $highlighted-text: #64ffda;
                 /* (853 / 1280 * 100) */
   }
 
-  video {
+  #lightVideo {
     padding: 0;
     border-radius: 100%;
     margin: 35vh 0 0 0;  

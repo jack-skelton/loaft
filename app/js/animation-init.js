@@ -1,3 +1,5 @@
+
+
 $(document).ready(function(){
   //shitty paralax
   $('.parallax').parallax();
@@ -21,8 +23,20 @@ $(document).ready(function(){
 
 });
 
- $(document).ready(function(){
-    $('.scrollspy').scrollSpy();
+$(document).ready(function(){
+  $('.scrollspy').scrollSpy();
+});
+
+$(document).ready(function(){
+  var vid =  $('#lightVideo');
+  vid.on("canplay", function() {
+    $('#power').css("visibility", "visible");
+    vid.css({
+      '-webkit-box-shadow': '2px 2px 34px 2px rgba(0,0,0,0.63)',
+      '-moz-box-shadow': '2px 2px 34px 2px rgba(0,0,0,0.63)',
+      'box-shadow': '2px 2px 34px 2px rgba(0,0,0,0.63)'
+    });
   });
-        
+});
+ 
 
