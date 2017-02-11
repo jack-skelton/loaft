@@ -21,7 +21,6 @@ h2, h3, h4, h5, h6 {
   font-weight: 300 !important;
 }
 
-
 #side-menu {
   position: fixed;
   right: -15px;
@@ -53,6 +52,10 @@ h2, h3, h4, h5, h6 {
 }
 
 #header  {
+-webkit-box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
+-moz-box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
+box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
+
   height: 100vh;
 
   .parallax {
