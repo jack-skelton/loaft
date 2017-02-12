@@ -25,7 +25,7 @@ $(document).ready(function(){
 
 $(document).ready(function(){
   $('.scrollspy').scrollSpy(
-    {scrollOffset: 0}
+    {scrollOffset: -130}
   );
 });
 

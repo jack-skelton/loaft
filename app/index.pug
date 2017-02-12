@@ -65,7 +65,7 @@ body
                 
                 .col.s12.m6.center-align
                     .card
-                        .card-image.waves-effect.waves-block.waves-light
+                        .card-image.waves-effect.waves-block.waves-light.activator
                             i.large.material-icons.activator visibility
                         .card-content
                             span.card-title.activator
@@ -79,7 +79,7 @@ body
                                 h5 Info about the whatever          
                 .col.s12.m6.center-align
                     .card
-                        .card-image.waves-effect.waves-block.waves-light
+                        .card-image.waves-effect.waves-block.waves-light.activator
                             i.large.material-icons.activator web
                         .card-content
                             span.card-title.activator
@@ -93,8 +93,8 @@ body
                                 h5 Info about the whatever          
                 .col.s12.m6.center-align
                     .card
-                        .card-image.waves-effect.waves-block.waves-light
-                            i.large.material-icons.activator assignment_ind
+                        .card-image.waves-effect.waves-block.waves-light.activator
+                            i.large.material-icons assignment_ind
                         .card-content
                             span.card-title.activator
                                 h2 brand identity
@@ -107,7 +107,7 @@ body
                                 h5 Info about the whatever        
                 .col.s12.m6.center-align
                     .card
-                        .card-image.waves-effect.waves-block.waves-light
+                        .card-image.waves-effect.waves-block.waves-light.activator
                             i.large.material-icons.activator search
                         .card-content
                             span.card-title.activator
@@ -122,18 +122,29 @@ body
                                 
            
             .section.whiteSpace
-            h1.right-align(id="projects").scrollspy 
-                mark our work
-                .main-carousel(data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround":true }')
+            .row(id="projects").scrollspy 
+                h1.right-align
+                    mark our work
+                .main-carousel(data-flickity='{ "cellAlign": "left", "contain": true, "wrapAround":true, "pageDots": false, "prevNextButtons": false, "imagesLoaded": true }')
                     .carousel-cell 
                         img(src='images/1.jpg')
+                        .project-name.left-align
+                            h4 Gamerholic
+                            h5 Gaming studio redesign
                     .carousel-cell 
-                        img(src='images/2.jpg')   
+                        img(src='images/2.jpg')
+                        .project-name.left-align
+                            h4 Chinese Shit  
+                            h5 Chines design shit
                     .carousel-cell
                         img(src='images/4.jpg')
+                        .project-name.left-align
+                            h4 Numberz
                     .carousel-cell 
-                        img(src='images/2.jpg')   
-            
+                        img(src='images/2.jpg')
+                        .project-name.left-align
+                            h4 More Chinese   
+               
             .section.whiteSpace
 
     .section.contact(id="contact").scrollspy
