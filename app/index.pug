@@ -12,40 +12,47 @@ html
     link(href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css", rel="stylesheet")
     <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" rel="stylesheet">
 
+
+
+
 body
-    #side-menu.row.fixed
-        .col.hide-on-small-only.m3.l2
-            ul
-                li
-                    a(href='#contact') Contact
-                li
-                    a(href='#projects') Projects
-                li
-                    a(href='#services') Services
-                li
-                    a(href='#about') About
-                li
-                    a(href='#header') Loaft
+    
+    
                
-
+                    
     #header
+        #side-menu.row.fixed
+            .col.hide-on-small-only.m3.l2
+                ul
+                    li
+                        a(href='#contact') Contact
+                    li
+                        a(href='#projects') Projects
+                    li
+                        a(href='#services') Services
+                    li
+                        a(href='#about') About
+                    li
+                        a(href='#header') Loaft
         .container
-            .row
-                .col.m7
-                    h1 Loaft
-                    h2 <span class="element"></span>
-                    a(href="#about")
-                        p <i class="fa fa-arrow-down" aria-hidden="true"></i> Scroll Down
-                .col.m5
-                    #power-symbol
-                        div(style="position: relative;")
-                            #power
-                        video(id="lightVideo" loop autoplay)
-                            <source src="/images/light-bulb.mp4" type="video/mp4">
-
+            section.panel
+                .row
+                    .col.m7
+                        h1 Loaft
+                        h2 <span class="element"></span>
+                        a(href="#about")
+                            p <i class="fa fa-arrow-down" aria-hidden="true"></i> Scroll Down
+                    .col.m5
+                        #power-symbol
+                            div(style="position: relative;")
+                                #power
+                            video(id="lightVideo" loop autoplay)
+                                <source src="/images/light-bulb.mp4" type="video/mp4">
+                                
     .section.white
+    
         .container
-            
+        
             h2 a sydney web design agency
             .section.whiteSpace
             .row(id="about").scrollspy
@@ -54,7 +61,7 @@ body
                         mark what are we?
                     h4.aboutus We exist to elevate your brand. Loaft brings together expertise from multiple disciplines to create engaging user experiences. We strive to bring your digital brand to the forefront of the market.
                     
-
+                    
             .section.whiteSpace
                        
             .row(id="services").scrollspy
@@ -153,7 +160,7 @@ body
             h3 your message:
             h5.right-align loaft@email.com
 
-            
+        
                     
                 
                        
