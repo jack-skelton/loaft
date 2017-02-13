@@ -52,38 +52,33 @@ h2, h3, h4, h5, h6 {
 }
 
 #header  {
--webkit-box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
--moz-box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
-box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
-
+  -webkit-box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
+  -moz-box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
+  box-shadow: inset 0px -3px 6px 0px rgba(0,0,0,0.15);
   height: 100vh;
+  background-color: $primary-color;
+  width: 100%;
 
-  .parallax {
-    background-color: $primary-color;
-    width: 100%;
-    position: fixed;
-
-    h1 {
-      color: $accent-text;
-      font-size: 10vw;
-      font-weight: 900;
-      margin-top: 23vh;
-      letter-spacing: -.03571em
-    }
-    h2 {
-      color: $primary-text;
+  h1 {
+    color: $accent-text;
+    font-size: 10vw;
+    font-weight: 900;
+    margin-top: 23vh;
+    letter-spacing: -.03571em
+  }
+  h2 {
+    color: $primary-text;
+    font-size: 2.5vw;
+    .typed-cursor{
       font-size: 2.5vw;
-      .typed-cursor{
-        font-size: 2.5vw;
-        opacity: 1;
-        -webkit-animation: blink 0.7s infinite;
-        -moz-animation: blink 0.7s infinite;
-        animation: blink 0.7s infinite
-      }
+      opacity: 1;
+      -webkit-animation: blink 0.7s infinite;
+      -moz-animation: blink 0.7s infinite;
+      animation: blink 0.7s infinite
     }
-    p {
-      margin-top: 42vh;
-    }
+  }
+  p {
+    margin-top: 42vh;
   }
 }
 
