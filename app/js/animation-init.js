@@ -3,11 +3,15 @@
 $(document).ready(function(){
   //shitty paralax
 
-  $('#side-menu').hide();
-  $('#header h1').hide().slideDown(function() {
+ 
+  $('#side-menu').hide().slideDown(function() {
     $('#side-menu').fadeIn(1000);
     //slogan 
-    $(function(){
+    
+  });
+
+});
+$(function(){
       $(".element").typed({
         //strings: ["web developers.", "graphic designers.","solution architects."],
         strings: ["modern <strong>Web</strong> and <strong>Graphic</strong> design.", "increase your <b>Digital</b> reach."],
@@ -18,10 +22,8 @@ $(document).ready(function(){
         startDelay: 0
       });
     });
-  });
 
-});
-
+    
 $(document).ready(function(){
   $('.scrollspy').scrollSpy(
     {scrollOffset: -130}
@@ -70,4 +72,3 @@ $(window).scroll(function() {
    $('.section.content').removeClass('cock');
 };   	
 });
-

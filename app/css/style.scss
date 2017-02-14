@@ -16,9 +16,7 @@ body, p, h1, h2, h3, h4, h5, h6 {
   font-family: $font-stack  !important;
   color: $primary-text;
 }
-h1{
-  font-family: 'Open Sans' !important;
-}
+
 h2, h3, h4, h5, h6 {
   font-weight: 300 !important;
 }
@@ -71,9 +69,11 @@ h2, h3, h4, h5, h6 {
     font-size: 10vw;
     font-weight: 900;
     margin-top: 23vh;
-    letter-spacing: -.03571em
+    letter-spacing: -.03571em;
   }
   h2 {
+     margin-top: 40vh;
+     letter-spacing: -.03571em;
     color: $primary-text;
     font-size: 2.5vw;
     .typed-cursor{
@@ -147,8 +147,7 @@ h2, h3, h4, h5, h6 {
 mark{background: $highlighted-text !important;}
 
 #about{padding-top: 200px; padding-bottom: 200px;}
-#projects{padding-top: 200px; padding-bottom: 200px;}
-#services{padding-top: 200px; padding-bottom: 200px;}
+
 
 h4.aboutus
 {
