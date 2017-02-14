@@ -1,9 +1,9 @@
-$primary-color: #f7f7f7;
+$primary-color: #FFD740;
 
 $accent-text: #000;
-$primary-text: #212121;
+$primary-text: #444;
 $secondary-text: #424242;
-$highlighted-text: #64ffda;
+$highlighted-text: #A7FFEB;
 
 $font-stack: 'Source Sans Pro', 'Sans-Serif';
 //------------------------------------------
@@ -22,9 +22,10 @@ h2, h3, h4, h5, h6 {
 }
 
 #side-menu {
-  position: fixed;
+  
   right: -15px;
-  z-index: 9;
+  position: fixed;
+  
   -webkit-transform-origin: right top;
   -webkit-transform:rotate(-90deg) translateY(-100%);
 
@@ -32,6 +33,7 @@ h2, h3, h4, h5, h6 {
     width: 100vh;
     text-align: center;
     height: 52px;
+    
 
     li {
       display: inline; 
@@ -60,9 +62,10 @@ h2, h3, h4, h5, h6 {
   width: 100%;
   position: fixed;
   top: 0;
+  
 
   h1 {
-    color: $accent-text;
+    color: $primary-text;
     font-size: 10vw;
     font-weight: 900;
     margin-top: 23vh;
@@ -80,7 +83,7 @@ h2, h3, h4, h5, h6 {
     }
   }
   p {
-    margin-top: 42vh;
+    margin-top: 35vh;
   }
 }
 
@@ -149,17 +152,44 @@ h4.aboutus
 {
       line-height: 2em;
           max-width: 700px;
+          color: white;
 }
 
 
-.section.white{
-  background-color: white;
+.section.content{
+ 
   position: relative;
   
-  width: 92%;
+  height: 100vh;
   margin:0 auto;
-  margin-top: 100vh;
-  box-shadow: 0 19px 38px rgba(0,0,0,0.30), 0 15px 12px rgba(0,0,0,0.22);
+  
+  height: auto;
+    .container {
+      padding-top: 100vh;
+    }
   }
+
+
+.show{
+  background-color: #ff7360;
+  opacity: 0.99;
+}
+.butt{
+  background-color: #FFF6E6;
+  opacity: 0.99;
+}
+.cock{
+  background-color: #79CCCD;
+  opacity: 0.99;
+}
+
+
+.transition {    
+  -webkit-transition: all 0.5s ease-in-out;
+	-moz-transition:  all 0.5s ease-in-out;
+	-o-transition:  all 0.5s ease-in-out;
+	transition:  all 0.5s ease-in-out;
+}
+
 
   

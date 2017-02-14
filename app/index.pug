@@ -5,6 +5,9 @@ html
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/css/materialize.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.0/js/materialize.min.js"></script>
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/ScrollMagic.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.5/plugins/debug.addIndicators.min.js"></script>
+    
     <script src="/js/animation-init.js"></script>
     <script src="/js/second.js"></script>
     <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
@@ -15,12 +18,16 @@ html
 
 
 
+
+
 body
     
     
+
                
                     
     #header
+        
         #side-menu.row.fixed
             .col.hide-on-small-only.m3.l2
                 ul
@@ -41,7 +48,7 @@ body
                         h1 Loaft
                         h2 <span class="element"></span>
                         a(href="#about")
-                            p <i class="fa fa-arrow-down" aria-hidden="true"></i> Scroll Down
+                            p.center-align <i class="fa fa-arrow-down" aria-hidden="true"></i> Scroll Down
                     .col.m5
                         #power-symbol
                             div(style="position: relative;")
@@ -49,21 +56,22 @@ body
                             video(id="lightVideo" loop autoplay)
                                 <source src="/images/light-bulb.mp4" type="video/mp4">
                                 
-    .section.white
     
-        .container
         
-            h2 a sydney web design agency
-            .section.whiteSpace
+    
+    .section.content.transition
+        .container
+           
             .row(id="about").scrollspy
                 .col.s12
                     h1
-                        mark what are we?
-                    h4.aboutus We exist to elevate your brand. Loaft brings together expertise from multiple disciplines to create engaging user experiences. We strive to bring your digital brand to the forefront of the market.
+                        mark  a sydney web design agency
+                    h4.aboutus We exist to elevate your brand. <br> Loaft brings together expertise from multiple disciplines to create engaging user experiences. We strive to bring your digital brand to the forefront of the market.
                     
                     
             .section.whiteSpace
-                       
+
+                   
             .row(id="services").scrollspy
                 
                 h1.center-align
@@ -154,11 +162,11 @@ body
             .section.whiteSpace
 
     .section.contact(id="contact").scrollspy
-        .container.white
-            h2 contact us
-            h3 email:
-            h3 your message:
-            h5.right-align loaft@email.com
+                .container.white
+                    h2 contact us
+                    h3 email:
+                    h3 your message:
+                    h5.right-align loaft@email.com
 
         
                     

@@ -2,7 +2,6 @@
 
 $(document).ready(function(){
   //shitty paralax
-  $('.parallax').parallax();
 
   $('#side-menu').hide();
   $('#header h1').hide().slideDown(function() {
@@ -41,3 +40,40 @@ $(document).ready(function(){
   });
 });
  
+
+
+     //FADE OUT TOP YELLOW PART
+      $(window).scroll(function(){
+              $("#header ").css("opacity", 1 - $(window).scrollTop() / 800);
+            });
+         
+
+
+
+// FADES IN CONTENT PART
+$(window).scroll(function() {
+// 100 = The point you would like to fade the nav in.
+  
+	if ($(window).scrollTop() > 500 && $(window).scrollTop() < 1500 ){
+    
+ 		$('.section.content').addClass('show');
+    $('.section.content').removeClass('butt');
+    $('.section.content').removeClass('cock');
+  } else if  ($(window).scrollTop() > 1500 && $(window).scrollTop() < 3000 ){
+    
+    $('.section.content').removeClass('show');
+     $('.section.content').removeClass('cock');
+    	$('.section.content').addClass('butt');
+    
+} else if  ($(window).scrollTop() > 3000 && $(window).scrollTop() < 6000 ){
+    
+    $('.section.content').removeClass('show');
+    	$('.section.content').removeClass('butt');
+    $('.section.content').addClass('cock');
+} else {
+  $('.section.content').removeClass('butt');
+  $('.section.content').removeClass('show');
+   $('.section.content').removeClass('cock');
+};   	
+});
+
