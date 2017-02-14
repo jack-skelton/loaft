@@ -42,19 +42,13 @@ $(document).ready(function(){
  
 
 
-     //FADE OUT TOP YELLOW PART
-      $(window).scroll(function(){
-              $("#header ").css("opacity", 1 - $(window).scrollTop() / 800);
-            });
-         
-
-
+    
 
 // FADES IN CONTENT PART
 $(window).scroll(function() {
 // 100 = The point you would like to fade the nav in.
   
-	if ($(window).scrollTop() > 500 && $(window).scrollTop() < 1500 ){
+	if ($(window).scrollTop() > 300 && $(window).scrollTop() < 1500 ){
     
  		$('.section.content').addClass('show');
     $('.section.content').removeClass('butt');

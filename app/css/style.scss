@@ -16,7 +16,9 @@ body, p, h1, h2, h3, h4, h5, h6 {
   font-family: $font-stack  !important;
   color: $primary-text;
 }
-
+h1{
+  font-family: 'Open Sans' !important;
+}
 h2, h3, h4, h5, h6 {
   font-weight: 300 !important;
 }
@@ -172,15 +174,16 @@ h4.aboutus
 
 .show{
   background-color: #ff7360;
-  opacity: 0.99;
+  
+  opacity: 1;
 }
 .butt{
   background-color: #FFF6E6;
-  opacity: 0.99;
+  opacity: 1;
 }
 .cock{
   background-color: #79CCCD;
-  opacity: 0.99;
+  opacity: 1;
 }
 
 
